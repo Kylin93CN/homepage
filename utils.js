@@ -3,7 +3,7 @@
 *  https://docs.seniverse.com/
 *
 */
-const api = 'http://api.seniverse.com/v3/weather/now.json?location=hangzhou&ts=1581077699&uid=PN0FxvpbqJsDdk9Fd&sig=qzMYdgIPWvI7YcSN%2Fcn%2BrdNFO5E%3D&callback=jsonpCallback';
+const api = '//api.seniverse.com/v3/weather/now.json?location=hangzhou&ts=1581077699&uid=PN0FxvpbqJsDdk9Fd&sig=qzMYdgIPWvI7YcSN%2Fcn%2BrdNFO5E%3D&callback=jsonpCallback';
 const jsonpCallback = data => {
   const weather = data.results[0];
   const { now, location } = weather;
